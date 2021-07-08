@@ -1,0 +1,6 @@
+gpu_id: 0
+use_gpu: True
+seed: 2020
+state: 'INFO'
+reproducibility: True
+"checkpoint_dir": "../saved"

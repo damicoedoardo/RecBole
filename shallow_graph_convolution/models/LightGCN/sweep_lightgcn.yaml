@@ -1,0 +1,21 @@
+method: grid
+metric:
+  goal: maximize
+  name: Recall@10
+early_terminate:
+  type: hyperband
+  min_iter: 3
+parameters:
+  learning_rate:
+    values: [1e-2, 1e-3, 1e-4]
+  embedding_size:
+    values: [64]
+  n_layers:
+    values: [1, 2, 3, 4]
+  weight_decay:
+    values: [0, 1e-2, 1e-3, 1e-4, 1e-5]
+  dataset:
+    values: ['ml-100k']
+
+
+program: shallow_graph_convolution/models/LightGCN/train_lightgcn.py

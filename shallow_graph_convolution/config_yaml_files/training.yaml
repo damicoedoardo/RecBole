@@ -1,0 +1,8 @@
+epochs: 300
+train_batch_size: 2048
+learner: 'adam'
+learning_rate: 0.001
+training_neg_sample_num: 1
+training_neg_sample_distribution: 'uniform'
+loss_decimal_place: 4
+weight_decay: 0.0

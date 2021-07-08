@@ -10,3 +10,4 @@ saved/
 *.lprof
 *.egg-info/
 docs/build/
+/shallow_graph_convolution/wandb/
